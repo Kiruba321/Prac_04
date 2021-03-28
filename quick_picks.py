@@ -14,7 +14,7 @@ def main():
     for i in range(number_quick_picks):
         quick_pick = []
         for j in range(NUMBERS_PER_LINE):
-            number = random.randit(MINIMUM, MAXIMUM)
+            number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
             quick_pick.append(number)
